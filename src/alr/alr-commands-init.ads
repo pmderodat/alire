@@ -9,9 +9,10 @@ package Alr.Commands.Init is
       Config : in out GNAT.Command_Line.Command_Line_Configuration);
 
    overriding function Short_Description (Cmd : Command) return String is
-      ("Creates a new project with alr metadata, or generate metadata");
+     ("Creates a new project with alr metadata, or generate metadata");
 
-   overriding function Usage_Custom_Parameters (Cmd : Command) return String is ("{--bin|--lib} <project name>");
+   overriding function Usage_Custom_Parameters (Cmd : Command) return String
+   is ("{--bin|--lib} <project name>");
 
 private
 
